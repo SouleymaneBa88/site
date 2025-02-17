@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container div styling */
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section styling */
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation menu styling */
+nav {
+    margin: 20px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Main content styling */
+main {
+    margin: 20px 0;
+}
+
+/* Article section styling */
+article {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* iFrame styling */
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* Footer section styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007BFF;
+    color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Header text styling */
+h1{
+    text-align: center;
+    color: black;
+}
+
+/* Paragraph text styling */
+p{
+    margin: 20px;
+    font-size: small;
+    text-align: center;
+}
+
+/* Image styling */
+img{
+    margin: 0 auto;
+    display: block;
+    max-width: 85%;
+    height: 30%;
+}
+p::first-letter {
+    font-size: 2em;  /* Agrandir la première lettre */
+    color: red;      /* Changer la couleur de la première lettre */
+    font-weight: bold; /* Mettre la première lettre en gras */
+  }
+  h1::first-letter {
+    font-size: 2em;  /* Agrandir la première lettre */
+    color: blue;     /* Changer la couleur de la première lettre */
+    font-weight: bold; /* Mettre la première lettre en gras */
+  }
+    

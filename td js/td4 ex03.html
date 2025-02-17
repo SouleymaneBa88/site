@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélectionner toutes les cases</title>
+    <script defer>
+        // Fonction pour cocher toutes les cases à cocher
+        function selectAll() {
+            // Sélectionner toutes les cases à cocher dans le document
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            // Parcourir chaque case à cocher et la cocher
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = true;
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Liste des options</h1>
+    <form>
+        <input type="checkbox" value="Sélectionner tout" onclick="selectAll()" name="Sélectionner Tout">    
+        Selectioner Tout     
+        <br>
+
+        <input type="checkbox" name="option" value="option1"> Option 1<br>
+        <input type="checkbox" name="option" value="option2"> Option 2<br>
+        <input type="checkbox" name="option" value="option3"> Option 3<br>
+        <input type="checkbox" name="option" value="option4"> Option 4<br>
+        <input type="button" value="Sélectionner tout" onclick="selectAll()">
+
+    </form>
+</body>
+</html>

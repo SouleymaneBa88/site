@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function Init() {  //Identification des éléments 
+        let champsaisie = document.getElementById("champsaisie");
+         let boutonSoumettre = document.getElementById("soumet"); 
+        let boutonRAZ = document.getElementById("raz");
+         // Gestionnaire de soumission 
+        boutonSoumettre.addEventListener("click", function() 
+        {
+         alert("Formulaire soumis avec le mot : " + champsaisie.value);
+         }); 
+         
+         // Gestionnaire de remise à zéro 
+        boutonRAZ.addEventListener("click", function() {
+         champsaisie.value = ""; 
+        alert("Formulaire remis à zéro"); });
+
+        }
+
+        
+        </script>
+</head>
+<body onload="Init()">
+
+    <form action="" id="formulaire">
+        <input type="text" value="Mot quelconque" id="champsaisie"> <br>
+        <input type="button" id="soumet" value="Soumettre">
+        <input type="button" id="raz" value="Remise à zéro" onclick="">
+
+    </form>
+</body>
+</html>

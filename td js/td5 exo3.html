@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Uvs - Liste des étudiants</title>
+</head>
+<body>
+
+    <h1>Liste des étudiants</h1>
+    <table id="liste" border= "1">
+        <link rel="stylesheet" href="style.css">
+        <tr>
+            <th>Delete</th>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>INE</th>
+            <th>Adresse</th>
+        </tr>
+        <tr>
+            <td><button onclick="supprimerEtudiant(this)">Supprimer</button></td>
+            <td>Mor</td>
+            <td>SENE</td>
+            <td>N0874562016</td>
+            <td>Dakar</td>
+        </tr>
+    </table>
+
+    <h1>Ajout d'un étudiant</h1>
+    <form id="formulaire" onsubmit="return ajouterEtudiant()">
+        Prénom: <input type="text" id="prenom" required><br>
+        Nom: <input type="text" id="nom" required><br>
+        INE: <input type="text" id="ine" required><br>
+        Adresse: <input type="text" id="adresse" required><br>
+        <button type="submit">Ajouter</button>
+    </form>
+
+    <script src="td5.js"></script>
+</body>
+</html>

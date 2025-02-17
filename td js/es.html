@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masquer tous les divs</title>
+    <script>
+        // Fonction pour masquer tous les éléments div
+        function hideAllDivs() {
+            const divs = document.querySelectorAll('div');
+            divs.forEach(div => {
+                div.style.display = 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemple de page</h1>
+    <div>Contenu du div 1</div>
+    <div>Contenu du div 2</div>
+    <div>Contenu du div 3</div>
+    <button onclick="hideAllDivs()">Masquer tous les divs</button>
+</body>
+</html>

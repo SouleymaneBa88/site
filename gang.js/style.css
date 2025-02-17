@@ -1,0 +1,31 @@
+body{
+    display: block;
+    justify-content: center;
+}
+.containe{
+    border: 2px solid green;
+    height: 538px;
+}
+header{
+    border: 1px solid green;
+    background-color: goldenrod;
+    color: black;
+}
+nav{
+    border: 1px solid green;
+    background-color: blue;
+    color: black;
+}
+.Milieu{
+    border: 1px solid green;
+    background-color: red;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    height: 300px;
+}
+footer{
+    background-color: goldenrod;
+    color: black;
+    height: 45px;
+}

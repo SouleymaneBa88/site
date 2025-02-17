@@ -1,0 +1,14 @@
+body{
+   margin: 0;
+   font-family: arial, sans-serif;
+}
+div{
+    border: 2px solid green;
+    height: 500px;
+}
+header{
+    border: 2px solid green;
+}
+nav{
+    border: 2px solid green;
+}

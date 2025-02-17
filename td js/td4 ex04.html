@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer tous les divs</title>
+    <script>
+        // Fonction pour supprimer tous les éléments div
+        function deleteAllDivs() {
+            const divs = document.querySelectorAll('div');
+            divs.forEach(div => {
+                div.remove();
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemple de page</h1>
+    <div>Contenu du div 1</div>
+    <div>Contenu du div 2</div>
+    <div>Contenu du div 3</div>
+    <button onclick="deleteAllDivs()">Supprimer tous les divs</button>
+</body>
+</html>

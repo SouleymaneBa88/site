@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="site.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <span><img src="image/logo.png" alt=""></span>
+            <a href="#Accueil">Accueil</a>
+            <a href="#Produits">Produite</a>
+            <a href="#Service">Service</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <div>
+            <form id="searchform" class="search" action="/recherche" method="get">
+                <input type="text" id="search1"name="q" placeholder="Rechercher...">
+           <button type="submit" id="search"> <i class='bx bx-search'></i></button>
+            </form>
+            <a href="#">
+            <i class='bx bxs-cart'></i>
+            <span id="cart">0</span>
+        </a>
+            <button class="connect">connect</button>
+        </div>
+    </header> 
+
+    <div class="home" id="Accueil">
+        
+        <h2>Produits Locaux</h2>
+        <h1>Transformation <br>
+            Agroalimentaire
+        </h1>
+        <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium, Ipsam Voluptatem? <br>
+            Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+        </p>
+
+        <button class="choix">Choisissez votre...</button>
+    </div>
+
+    <div class="sb">
+        <section>
+            <img src="image/SankhalCEDAF.jpeg" alt="">
+            <img src="image/JUS_DE_BOUYE.jpg.jpg" alt="">
+        </section>
+        <section>
+            <h1>Transformation Agroalimentaire</h1>
+            <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium, Ipsam Voluptatem? <br>
+                Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+            </p>
+            <img src="image/Groupe 1.png" alt=""> <img src="image/Groupe 2.png" alt=""> <img src="image/Groupe 3.png" alt="">
+        </section>
+    </div>
+    
+    <div id="Produits">
+        <h2>Les Produits</h2>
+        <div class="first-line">
+  <section>
+    <img src="image/Sankhal.png" alt="">
+    <h3>Sankal</h3>
+    <p>Produits 100% Narurel</p>
+    <p id="prix">2.500FCFA</p>
+    <div class="note">
+        <i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bx-star' ></i></i>
+    </div>
+    <button onclick="ajouterCommande()">Ajouter</button>
+  </section>
+  <section>
+    <img src="image/Arraw.png" alt="">
+    <h3>Arraw</h3>
+    <p>Produits 100% Narurel</p>
+    <p id="prix"> 2.500FCFA</p>
+    <div class="note">
+        <i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bx-star' ></i></i>
+    </div>
+    <button onclick="ajouterCommande()">Ajouter</button>
+  </section>
+  <section>
+    <img src="image/Thiakry.png" alt="">
+    <h3>Thiakry</h3>
+    <p>Produits 100% Narurel</p>
+    <p id="prix"> 2.500FCFA</p>
+    <div class="note">
+        <i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bx-star' ></i></i>
+    </div>
+    <button onclick="ajouterCommande()">Ajouter</button>
+  </section>
+  <section>
+    <img src="image/Soungouf.png" alt="">
+    <h3>Soungouf</h3>
+    <p>Produits 100% Narurel</p>
+    <p id="prix"> 2.500FCFA</p>
+    <div class="note">
+        <i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bx-star' ></i></i>
+    </div>
+    <button onclick="ajouterCommande()">Ajouter</button>
+  </section>
+</div>
+
+ <div class="second-line">
+  <section>
+    <img src="image/Bouye.png" alt="">
+    <h3>Bouye</h3>
+    <p>Produits 100% Narurel</p>
+    <p id="prix"> 2.500FCFA</p>    <div class="note">
+        <i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bx-star' ></i></i>
+    </div>
+    <button onclick="ajouterCommande()">Ajouter</button>
+  </section>
+  <section>
+    <img src="image/Gingembre.png" alt="">
+    <h3>Gingembre</h3>
+    <p>Produits 100% Narurel</p>
+    <p id="prix"> 2.500FCFA</p>
+    <div class="note">
+        <i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bx-star' ></i></i>
+    </div>
+    <button onclick="ajouterCommande()">Ajouter</button>
+  </section>
+  <section>
+    <img src="image/Bissap_Rouge.png" alt="">
+    <h3>Bissap_Rouge</h3>
+    <p>Produits 100% Narurel</p>
+    <p id="prix"> 2.500FCFA</p>
+    <div class="note">
+        <i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bx-star' ></i></i>
+    </div>
+    <button onclick="ajouterCommande()">Ajouter</button>
+  </section>
+  <section>
+    <img src="image/JUS_DE_BOUYE.jpg.jpg" alt="">
+    <h3>Bouye</h3>
+    <p>Produits 100% Narurel</p>
+    <p id="prix"> 2.500FCFA</p>
+    <div class="note">
+        <i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bxs-star'></i></i><i><i class='bx bx-star' ></i></i>
+    </div>
+    <button onclick="ajouterCommande()">Ajouter</button>
+  </section>
+</div>
+</div>
+</div>
+  
+<div class="mn">
+    <h2>Temoignages</h2>
+    <div class="Temoignages">
+    <section>
+        <img src="image/Luffy.png" alt="">
+        <h3>Abdou Khadim</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium,<br>
+             Ipsam Voluptatem? <br>
+            Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+        </p>
+    </section>
+    <section>
+        <img src="image/Luffy.png" alt="">
+        <h3>Abdou Khadim</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium,<br>
+             Ipsam Voluptatem? 
+            Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+        </p>
+    </section>
+    <section>
+        <img src="image/Luffy.png" alt="">
+        <h3>Abdou Khadim</h3>
+        <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium, Ipsam Voluptatem? <br>
+            Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+        </p>
+    </section>
+</div>
+</div>
+ 
+<div class="b">
+    <div>
+    <section>
+        <img src="image/man.png" alt="">
+        <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium, Ipsam Voluptatem? <br>
+            Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+        </p>
+        <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium, Ipsam Voluptatem? <br>
+            Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+        </p>
+    </section>
+    </div>
+    <div>
+    <section>
+        <img src="image/esteval1.png" alt="">
+        <img src="image/esteval2.png" alt="">
+    </section>
+    </div>
+</div>
+<div class=" input">
+    <input type="email" name="email" id="email" placeholder="Entrez votre email"> <br>
+    <button type="submit">Envoye</button>
+</div>
+<div class="services" id="Service">
+    <h2>Nos services </h2>
+    <div class="Nos">
+        
+        <section>
+            <img src="image/Luffy.png" alt="">
+            <h3>Abdou Khadim</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium,<br>
+                 Ipsam Voluptatem? <br>
+                Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+            </p>
+        </section>
+        <section>
+            <img src="image/Luffy.png" alt="">
+            <h3>Abdou Khadim</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium,<br>
+                 Ipsam Voluptatem? <br>
+                Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+            </p>
+        </section>
+        <section>
+            <img src="image/Luffy.png" alt="">
+            <h3>Abdou Khadim</h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consecteur Adipisicing Elit. Laudantium,<br>
+                 Ipsam Voluptatem? <br>
+                Dolor Officia Tempora Nulla Vel Debitis Inventore Rem Veniam Ad lure Laborum Voluptatum.
+            </p>
+        </section>
+    </div>
+    </div>
+<div class="C" id="Contact">
+    <h2>Contact Sn</h2"é>
+    <div class="Contact">
+    <section>
+    <input type="text" name="name" id="name" placeholder="Entrez votre Nom"> <br>
+    <input type="email" name="email" id="email" placeholder="Entrez votre E-mail"> <br>
+    <textarea name="message" id="textInput" placeholder="Entrez un message"></textarea> <br> 
+    <p id="result" onclick="insertParagraph()">Cliquez ici pour ajouter un paragraphe</p>
+   
+  <pre>  <button class="send">Envoyer</button></pre>
+</section>
+  </div>
+</div>
+<div id="horaire">
+    <table>
+        <tr>
+            <th>Ojectifs</th>
+            <th>Heures</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>promouvoir</td>
+            <td>Lundi</td>
+            <td>25562569652</td>
+        </tr>
+        <tr>
+            <td>ohgfdsdfgh</td>
+            <td>samedi</td>-qè
+            <td>32145852</td>
+        </tr>
+        <tr>
+            <td>lkjhgfd</td>
+            <td>fermé</td>
+            <td>658755877</td>
+        </tr>
+    </table>
+</div>
+<footer>
+    <p>Copyright 2024 . Tous droits réservés.</p>
+    <p>Conçu par Souleymane</p>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
