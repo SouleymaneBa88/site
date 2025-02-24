@@ -1,0 +1,31 @@
+        /* Conteneur pour centrer l'animation */
+        .container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 100px auto;
+            border: 1px solid ;
+        }
+
+        /* Définition du style pour la boîte animée */
+        .animated-box {
+            width: 50px;
+            height: 50px;
+            background-color: blue; /* Couleur de fond bleue */
+            border-radius: 50%; /* Rendre la boîte circulaire */
+            position: absolute; /* Positionnement absolu pour le mouvement */
+            top: 0; /* Commencer en haut */
+            left: 50%; /* Centrer horizontalement */
+            transform: translateX(-50%); /* Ajuster pour centrer parfaitement */
+            animation: orbit 5s linear infinite; /* Nom de l'animation, durée de 5 secondes, linéaire et répétée à l'infini */
+        }
+
+        /* Définition des keyframes pour l'animation circulaire */
+        @keyframes orbit {
+            0% {
+                transform: translateX(-50%) rotate(0deg) translate(100px) rotate(0deg); /* Début de l'orbite */
+            }
+            100% {
+                transform: translateX(-50%) rotate(360deg) translate(100px) rotate(-360deg); /* Fin de l'orbite */
+            }
+        }

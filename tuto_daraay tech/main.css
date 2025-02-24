@@ -1,0 +1,61 @@
+body{
+    justify-content: center;
+    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #F8F9FB;
+}
+
+
+.containe {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Ombre blanche avec opacité réduite */
+
+}
+
+.tleft {
+    border: 1px solid white;
+    background-color: #038C73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vh;
+    height: 55vh;
+}
+
+.tright {
+    border: 1px solid white;
+    width: 40vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column; /* Pour aligner les inputs verticalement */
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    
+}
+
+img {
+    width: 30vh;
+    border-radius: 50%;
+    background-color: #3F93A6;
+}
+
+input {
+    margin: 5px 0; /* Ajoute un peu d'espace entre les inputs */
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 35vh;
+}
+.button{
+    background-color: #038C73;
+    color: white;
+}

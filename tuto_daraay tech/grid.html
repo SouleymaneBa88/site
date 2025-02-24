@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: white;
+            grid-template-areas: 
+            'header header header header haeder '
+            'menu   mom     mom     mom  mom'
+            'menu  main     haut  right1 left1'
+            'menu footer  footer  footer footer'
+            'menu footer1  footer1  footer1 footer1'
+            'menu footer2  footer2  footer2 footer2'
+            ;
+            gap: 1px;
+            height: 95vh;
+        }
+        .container > div{
+            
+            
+            font-size: 30px;
+            text-align: center;
+        }
+        .header{
+            grid-area: header;
+            background-color: rgba(159, 178, 178, 0.937);
+            grid-column: 2 / 6;
+
+        }
+        .menu{
+            grid-area: menu;
+            grid-row: 1 / span 6;
+            background-color: rgba(159, 178, 178, 0.937);
+            margin: 10px;
+        }
+        .main{
+            grid-area: main;
+            background-color: rgba(159, 178, 178, 0.937);
+            margin: 10px;
+        }
+        .right1{
+            grid-area: right1;
+            background-color: rgba(159, 178, 178, 0.937);
+            margin: 10px;
+        }
+        .haut{
+            grid-area: haut;
+            background-color: brown;
+            margin: 10px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgba(159, 178, 178, 0.937);
+        }
+        .footer1{
+            grid-area: footer1;
+            background-color: rgba(159, 178, 178, 0.937);
+
+        }
+        .footer2{
+            grid-area: footer2;
+            background-color: rgba(159, 178, 178, 0.937);
+
+        }
+        .left1{
+            grid-area: left1;
+            background-color: black;
+            margin: 10px;
+        }
+        .mom{
+            grid-area: mom;
+            background-color: white;
+
+        }
+
+        img{
+            width: 85px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><img src="img1/Thiakry.png" alt=""></div>
+        <div class="mom">
+            <h1>hello</h1>
+        </div>
+        <div class="menu">menu</div>
+        <div class="main">main</div>
+        <div class="right1">right1</div>
+        <div class="left1">left1</div>
+        <div class="haut">haut</div>
+        <div class="footer1">footer1</div>
+        <div class="footer2">footer2</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

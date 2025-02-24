@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let newDiv = document.createElement('div');
+        newDiv.style.border ='2px solid red';
+        newDiv.style.padding ='10px';
+        newDiv.style.width ='85vh';
+       
+        let title = document.createElement('h1');
+        title.textContent='Un essaie avec des style';
+        newDiv.appendChild(title);
+
+        for(let i = 1; i<= 4; i++){
+        let header = document.createElement('h2');
+        header.textContent = 'Titre de la section';
+        header.style.border ='2px solide red';
+
+        let paragraph = document.createElement('p');
+        paragraph.textContent='bla bla bla bla';
+        newDiv.appendChild(header);
+        newDiv.appendChild(paragraph);
+    }
+
+    document.body.appendChild(newDiv);
+    </script>
+</body>
+</html>

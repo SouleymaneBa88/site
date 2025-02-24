@@ -1,0 +1,72 @@
+div{
+    width: 90%;
+   height: 200px;
+   margin: 0 auto 20px auto;
+   border: 2px solid black;
+   box-sizing: border-box;
+}
+.d1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    animation-name: changement-couleur;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 50%;
+}
+ /*  animation-name: couleur, essuieglace, taille;
+   animation-duration: 10s , 2s;
+}
+
+@keyframes couleur{
+   from{background-color: orange;}
+   50%{background-color: purple;}
+   to{background-color: orange;}
+}
+
+@keyframes taille{
+   from{width: 100%}
+   50%{width: 50%;}
+   to{width: 100%;}
+}
+@keyframes essuieglace{
+   from{margin-top: 0px;}
+   50%{margin-top: 100px;}
+   to{margin-top : 0px;}
+}
+   */
+   @-webkit-keyframes changement-couleur
+   {
+    0%{
+        background-color: green;
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-color: yellow;
+        top: 0;
+        left: 200px; 
+    }
+    50%{
+        background-color: palevioletred;
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        background-color: red;
+        top: 200px;
+        left: 0;
+    }
+    100%{
+        background-color: green;
+        top: 0;
+        left: 0;
+    }
+
+   }
+
+ 
